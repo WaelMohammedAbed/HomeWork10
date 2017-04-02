@@ -1,0 +1,41 @@
+2. Repeat the program in 1, except, starting from the end of the array and traversing backwards.
+
+Answer:
+
+
+////////////////////// javascript //////////////
+
+function myUpperCase(str) {
+    if(str.length>2)
+    {
+     for(var i = str.length-3; i >= 0; i=i-3){               
+          
+          str[i] =str[i].toUpperCase();                    
+     }
+    }
+     return str;                              
+}
+
+a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"];
+myUpperCase(a);
+console.log(a);
+
+////////////////////////////////////////////////
+
+# ///////////// Ruby   /////////////////////////
+
+def myUpperCase a
+if a.size > 2 
+  
+  (a.size-3).step(0,-3){|i| a[i]=a[i].upcase}
+ 
+end
+end
+
+a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"];
+
+myUpperCase a
+
+puts a
+
+# //////////////////////////////////////////////
