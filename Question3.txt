@@ -49,7 +49,7 @@ b.each do |value|
       (0).step(value,10){|i| print i}
       puts ""
   elsif value%5 == 0
-      puts value**20
+      puts value**2
   elsif value%2 == 0 
       puts value-1
   elsif value%2 == 1 
