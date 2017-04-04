@@ -1,0 +1,25 @@
+<html>
+<head>
+
+</head>
+<body>
+enter whatever you like here 
+<textarea onkeyup="changeP(this)"></textarea>
+<p id="p1">
+</p>
+<p id="p2">
+</p>
+<p id="p3">
+</p>
+<p id="p4">
+</p>
+<script>
+function changeP(myText) {
+    document.getElementById("p1").innerHTML = myText.value;
+	document.getElementById("p2").innerHTML = myText.value;
+	document.getElementById("p3").innerHTML = myText.value;
+	document.getElementById("p4").innerHTML = myText.value;
+}
+</script>
+</body>
+</html>
