@@ -1,0 +1,51 @@
+7. Write the following programs:
+ - Write a JavaScript program that will create another array, which will be 2/3 * the corresponding 
+	element in the new array + 1/2. Then, for each element in b, print element * every element in the new array 
+	(cross product). 
+ - Write the same program in Ruby.
+ 
+ Answer:
+ 
+/////////////////////// javascript /////////////////////
+
+b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50]
+
+var c=new Array(b.length);
+for ( var i=0;i<b.length;i++)
+{
+  c[i]=2/3*b[i]+1/2;
+}
+
+for ( var i=0;i<b.length;i++)
+{
+  for ( var j=0;j<c.length;j++)
+{
+  
+  console.log((b[i]*c[j]));
+}
+console.log("---------------");// to seperate the output of each element
+}
+
+////////////////////////////////////////////////////////
+
+/////////////////////// Ruby ///////////////////////////
+
+ b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50]
+c=Array.new b.size
+
+b.each.with_index do |value,i|
+  
+  c[i]=(2.0/3*value)+(1.0/2)
+  
+end
+
+b.each do |value|
+  c.each do |cvalue|
+  
+  puts "#{value*cvalue}"
+  end
+  puts "------------"#to seperate the output of each element
+  
+end
+
+////////////////////////////////////////////////////////
