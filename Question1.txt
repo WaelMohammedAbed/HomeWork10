@@ -1,0 +1,56 @@
+a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"]
+b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50]
+
+1. Write the following programs:
+ - Write a JavaScript program that will loop through array a, and capitalizes every third word.
+ - Create a Ruby program that does exactly the same thing.
+ 
+ Answer:
+ 
+ /////////// javascript ////////////////
+ 
+function capitalize(str) {
+    if(str.length>2)
+    {
+     for(var i = 2; i < str.length; i=i+3){               
+          
+          str[i] =str[i].toUpperCase();                    
+     }
+    }
+     return str;                              
+}
+
+a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"];
+capitalize(a);
+console.log(a);
+ 
+ ///////////////////////////////////////
+ 
+ 
+ 
+# ///////////// Ruby ////////////////////
+ 
+ def myCapitalize a
+if a.size > 2 
+  for i in (2..a.size-1).step(3)
+  
+    a[i]=a[i].upcase
+
+end
+end
+end
+
+a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"];
+
+myCapitalize a
+
+puts a
+ 
+ 
+ 
+ 
+ 
+# ///////////////////////////////////////
+ 
+ 
+ 
